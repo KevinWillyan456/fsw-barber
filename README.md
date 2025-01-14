@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FSW Barber
 
-## Getting Started
+Este sistema é um sistema de agendamentos para barbearias. Ele permite que os clientes agendem horários com seus barbeiros preferidos de forma fácil e rápida, garantindo um atendimento organizado e eficiente.
 
-First, run the development server:
+## Como iniciar
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Para iniciar o projeto, siga os passos abaixo:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Certifique-se de ter o PNPM instalado. Se não tiver, instale-o globalmente usando o comando:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```sh
+    npm install -g pnpm
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Instale as dependências do projeto:
 
-## Learn More
+    ```sh
+    pnpm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Inicie o servidor de desenvolvimento:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```sh
+    pnpm dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Agora acesse `http://localhost:3000` no seu navegador para ver a aplicação rodando.
 
-## Deploy on Vercel
+## Documentação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A documentação do projeto é dividida em várias partes, cada uma com um propósito específico. Confira abaixo a lista de documentos disponíveis:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Comandos Importantes do Prisma](docs/DATABASE.md): Documentação do banco de dados do projeto.
