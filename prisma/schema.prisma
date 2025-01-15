@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
@@ -28,7 +28,7 @@ model BarberShop {
 model Service {
   id           String     @id @default(uuid())
   name         String
-  price        Decimal    @db.Decimal(10, 2)
+  price        Float
   barberShopId String
   barberShop   BarberShop @relation(fields: [barberShopId], references: [id])
   description  String

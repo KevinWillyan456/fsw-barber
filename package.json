@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "studio": "prisma studio",
+    "migration:dev": "prisma migrate dev",
+    "seed": "prisma db seed"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
