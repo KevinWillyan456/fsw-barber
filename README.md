@@ -4,21 +4,45 @@ Este sistema é um sistema de agendamentos para barbearias. Ele permite que os c
 
 ## Como iniciar
 
-Para iniciar o projeto, siga os passos abaixo:
+Para iniciar o projeto, siga os passos abaixo em ordem sequencial para não ter problemas:
 
-1. Certifique-se de ter o PNPM instalado. Se não tiver, instale-o globalmente usando o comando:
+1. Clone o repositório para sua máquina local:
+
+    ```sh
+    git clone https://github.com/KevinWillyan456/fsw-barber.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```sh
+    cd fsw-barber
+    ```
+
+3. Certifique-se de ter o PNPM instalado. Se não tiver, instale-o globalmente usando o comando:
 
     ```sh
     npm install -g pnpm
     ```
 
-2. Instale as dependências do projeto:
+4. Instale as dependências do projeto:
 
     ```sh
     pnpm install
     ```
 
-3. Inicie o servidor de desenvolvimento:
+5. Execute as migrações do banco de dados:
+
+    ```sh
+    pnpm db
+    ```
+
+6. Popule o banco de dados com dados iniciais:
+
+    ```sh
+    pnpm seed
+    ```
+
+7. Inicie o servidor de desenvolvimento:
 
     ```sh
     pnpm dev

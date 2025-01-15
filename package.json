@@ -8,10 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "studio": "prisma studio",
+    "db": "prisma db push",
     "migration:dev": "prisma migrate dev",
     "seed": "prisma db seed"
   },
-  "prisma": {
+  "prisma": { 
     "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
