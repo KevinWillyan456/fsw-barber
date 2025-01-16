@@ -1,5 +1,7 @@
 # Comandos Importantes do Prisma
 
+[Voltar para o README](../README.md)
+
 ## Índices
 
 - [Migração do Banco de Dados](#migração-do-banco-de-dados)
@@ -33,8 +35,14 @@ pnpm seed
 
 ## Sincronização do Banco de Dados
 
-Para sincronizar seu banco de dados com o esquema Prisma, use:
+Para sincronizar o banco de dados com o esquema Prisma, use:
 
 ```sh
-pnpm db
+pnpm push
+```
+
+Para puxar as alterações do banco de dados para o esquema Prisma, use:
+
+```sh
+pnpm pull
 ```

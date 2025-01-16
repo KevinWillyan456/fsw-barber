@@ -30,10 +30,10 @@ Para iniciar o projeto, siga os passos abaixo em ordem sequencial para não ter 
     pnpm install
     ```
 
-5. Execute as migrações do banco de dados:
+5. Sincronize o banco de dados com o esquema Prisma:
 
     ```sh
-    pnpm db
+    pnpm push
     ```
 
 6. Popule o banco de dados com dados iniciais:
