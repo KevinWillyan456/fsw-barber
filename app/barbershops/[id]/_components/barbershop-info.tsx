@@ -41,10 +41,8 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
                     src={barbershop.imageUrl}
                     fill
                     alt={barbershop.name}
-                    style={{
-                        objectFit: 'cover',
-                    }}
-                    className="opacity-75"
+                    className="opacity-75 object-cover"
+                    priority
                 />
             </div>
 

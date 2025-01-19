@@ -14,10 +14,10 @@ const ServiceItem = ({ service }: ServiceItemProps) => {
                 <div className="flex gap-4 items-center w-full">
                     <div className="relative min-h-[110px] min-w-[110px] max-h-[110px] max-w-[110px]">
                         <Image
-                            className="rounded-lg"
+                            className="rounded-lg object-contain"
                             src={service.imageUrl}
                             fill
-                            style={{ objectFit: 'contain' }}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             alt={service.name}
                         />
                     </div>
